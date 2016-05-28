@@ -1,27 +1,16 @@
 {
   "name": "minigrid",
   "authors": [
-    "Igor <igor.ssqwe@gmail.com>"
+    "Igor Sousa <igor.ssqwe@gmail.com>"
   ],
-  "description": "grid simple",
-  "main": "",
-  "moduleType": [
-    "node"
-  ],
-  "keywords": [
-    "grid"
-  ],
+  "description": "",
   "license": "MIT",
-  "homepage": "https://github.com/IgorSousaFront",
+  "homepage": "index.php",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
-    "jquery": "^2.2.2"
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "fontawesome#~4.5.0",
+    "jquery-cycle2": "~2.1.6",
+    "ifeed": "https://raw.githubusercontent.com/alisonmonteiro/ifeed/master/app/app.js"
   }
 }
