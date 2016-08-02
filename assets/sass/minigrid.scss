@@ -1,0 +1,67 @@
+$column-number: 12 !default;
+
+@mixin make-reset($i: 1, $cols: ".col-mb-#{$i}, .col-tb-#{$i}, .col-dk-#{$i}, .col-tv-#{$i}") {
+  @for $i from (1 + 1) through $column-number {
+    $cols: "#{$cols}, .col-mb-#{$i}, .col-tb-#{$i}, .col-dk-#{$i}, .col-tv-#{$i}";
+  }
+  #{$cols} {
+    position: relative;
+    padding-left:  15px;
+    padding-right: 15px;
+  }
+}
+
+@mixin calc-grid($index, $type, $size) {
+
+	@if ($type == width) and ($index > 0) {
+
+		.#{$size}-#{$index} {
+
+			#{$type}: percentage(($index / $column-number));
+		}
+	}
+}
+
+@mixin loop-grid($columns,  $type) {
+
+	@for $i from 0 through $columns {
+
+		@include calc-grid($i,  $type, mb);
+	}
+	@media (min-width: $screen-tb) {
+
+		@for $i from 0 through $columns {
+
+			@include calc-grid($i,  $type, tb);
+		}
+	}
+	@media (min-width: $screen-dk) {
+
+		@for $i from 0 through $columns {
+
+			@include calc-grid($i,  $type, dk);
+		}
+	}
+	@media (min-width: $screen-tv) {
+
+		@for $i from 0 through $columns {
+
+			@include calc-grid($i,  $type, tv);
+		}
+	}
+}
+
+@include loop-grid($column-number, width);
+@include make-reset($column-number);
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	@media (min-width: $screen-mb) {
+		width: calc(100% - 200px);
+	}
+}

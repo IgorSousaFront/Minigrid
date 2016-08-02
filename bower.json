@@ -1,0 +1,14 @@
+{
+  "name": "minigrid",
+  "authors": [
+    "Igor Sousa <igor.ssqwe@gmail.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "homepage": "index.php",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.5.0",
+    "fullpage.js": "^2.8.2"
+  }
+}
