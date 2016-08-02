@@ -1,5 +1,5 @@
 {
-  "name": "Minigrid",
+  "name": "minigrid",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -16,10 +16,7 @@
   "devDependencies": {
     "gulp"              : "^3.9.1",
     "gulp-concat"       : "^2.6.0",
-    "browser-sync"      : "^2.10.0",
     "gulp-csso"         : "^2.0.0",
-    "gulp-file-include" : "^0.13.7",
-    "gulp-sass"         : "^2.2.0",
-    "gulp-uglify"       : "^1.5.3"
+    "gulp-sass"         : "^2.2.0"
   }
 }
