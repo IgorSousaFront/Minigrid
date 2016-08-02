@@ -1,17 +1,14 @@
 $column-number: 12 !default;
 
-@mixin make-reset($index) {
-
-	@for $i from 0 through $index {
-		.mb-#{$i},
-		.tb-#{$i},
-		.dk-#{$i},
-		.tv-#{$i} {
-			padding-right: 15px;
-			padding-left: 15px;
-			position: relative;
-		}
-	}
+@mixin make-reset($i: 1, $cols: ".col-mb-#{$i}, .col-tb-#{$i}, .col-dk-#{$i}, .col-tv-#{$i}") {
+  @for $i from (1 + 1) through $column-number {
+    $cols: "#{$cols}, .col-mb-#{$i}, .col-tb-#{$i}, .col-dk-#{$i}, .col-tv-#{$i}";
+  }
+  #{$cols} {
+    position: relative;
+    padding-left:  15px;
+    padding-right: 15px;
+  }
 }
 
 @mixin calc-grid($index, $type, $size) {
