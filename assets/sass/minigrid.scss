@@ -61,6 +61,10 @@ $column-number: 12 !default;
 	justify-content: space-between;
 	flex-wrap: wrap;
 
+	> * {
+		box-sizing: border-box;
+	}
+
 	@media (min-width: $screen-mb) {
 		width: calc(100% - 200px);
 	}
