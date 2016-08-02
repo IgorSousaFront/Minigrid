@@ -3,23 +3,18 @@
 */
 
 @import "variables";
-// @import "mixins";
 @import "reset";
-// @import "forms";
 
 /*
 // External estyles
 */
 
-// @import "bootstrap";
-@import "minigrid";
 @import "../../bower_components/font-awesome/scss/font-awesome";
+@import "minigrid";
 
 /*
 // Internal estyles
 */
 
-// @import "header";
-// @import "home";
-// @import "internal";
-// @import "footer";
+
+@import "header";

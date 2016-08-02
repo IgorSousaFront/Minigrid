@@ -1,2 +1,4 @@
 @@include('header.php')
-</body>
+	<main id="main">
+	</main>
+<!-- @@include('footer.php') -->

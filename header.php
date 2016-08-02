@@ -3,28 +3,32 @@
 	<head>
 		<!-- metatags -->
 		<meta charset="utf-8">
-		<meta name="theme-color" content="‪#‎8844ee‬">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Titulo -->
-		<title>Grid com css</title>
+		<title>Minigrid</title>
 		<!-- css -->
 		<link rel="stylesheet" href="css/main.css">
 		<!-- js -->
-		<script type="text/javascript"></script>
+		<!-- <script type="text/javascript"></script> -->
 	</head>
-
-	<body>
-		<header>
-			<div class="mg-container">
-				<div class="col-12">
-					<div class="box">
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="box">
-					</div>
-				</div>
-			</div>
-		</header>
+	<header id="header">
+		<div class="container">
+			<section class="header__brand mb-8">
+				<img src="img/logo-top.png" alt="">
+			</section>
+			<section class="header__toggle-menu mb-2">	
+				<button class="">
+					<i class="fa fa-bars"></i>
+				</button>
+			</section>
+			<nav class="header__nav mb-12">
+				<ul>
+					<li><a href="#">O que é?</a></li>
+					<li><a href="#">Por que usar?</a></li>
+					<li><a href="#">Como usar?</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 	

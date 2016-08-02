@@ -8,9 +8,7 @@
   "homepage": "index.php",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
     "font-awesome": "fontawesome#~4.5.0",
-    "jquery-cycle2": "~2.1.6",
-    "ifeed": "https://raw.githubusercontent.com/alisonmonteiro/ifeed/master/app/app.js"
+    "fullpage.js": "^2.8.2"
   }
 }

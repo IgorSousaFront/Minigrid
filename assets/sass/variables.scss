@@ -1,4 +1,10 @@
 /*
+// Fontes principais
+*/
+
+$font-primary: 'Roboto', sans-serif;
+
+/*
 // Cores principais
 */
 
@@ -8,10 +14,10 @@ $color-light     : #bbddee;
 $color-dark      : #778899;
 
 /*
-// Tamanhos
+// Breakpoints
 */
 
-$screen-xs: 450px;
-$screen-sm: 768px;
-$screen-md: 992px;
-$screen-lg: 1200px;
+$screen-mb: 450px;
+$screen-tb: 768px;
+$screen-dk: 992px;
+$screen-tv: 1200px;
