@@ -1,0 +1,12 @@
+#header {
+	padding: 20px 0;
+	
+	.header__brand {
+		border: 1px solid red;
+
+		h1 {
+			color: $color-primary;
+			text-transform: uppercase;
+		}
+	}
+}

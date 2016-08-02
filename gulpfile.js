@@ -8,7 +8,7 @@ sync        = require ('browser-sync');
 
 gulp.task('serverRun', function() {
     sync.init({
-        proxy: "localhost/projetos/minigrid/public/"
+        proxy: "localhost/projetos/minigrid/dist/"
     });
 });
 
@@ -19,7 +19,7 @@ gulp.task('sass', function () {
   .pipe(sass().on('error', sass.logError))
   .pipe(concat('main.css'))
   .pipe(csso())
-  .pipe(gulp.dest('./public/css/'))
+  .pipe(gulp.dest('./dist/css/'))
   .pipe(sync.stream());
 });
 
@@ -27,20 +27,20 @@ gulp.task('js', function () {
   return gulp.src([
   ])
   .pipe(concat('main.js'))
-  .pipe(gulp.dest('public/js/'))
+  .pipe(gulp.dest('dist/js/'))
   .pipe(sync.stream());
 });
 
 gulp.task('fileinclude', function() {
   gulp.src([
-    'index.php'
+    'index.html'
   ])
   .pipe(fileinclude({
     prefix: '@@',
     indent: true,
     basepath: './'
   }))
-  .pipe(gulp.dest('./public/'))
+  .pipe(gulp.dest('./dist/'))
   .pipe(sync.stream());
 });
 
