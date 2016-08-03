@@ -2,6 +2,10 @@
 
 Inicialmente a idéia é bem simples...
 
+### Link para a demo
+
+https://igorsousafront.github.io/Minigrid/dist/
+
 ### O que preciso pra fazer funcionar?
 
 ##### Passo1: 
