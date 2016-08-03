@@ -3,7 +3,6 @@ sass        = require('gulp-sass'),
 csso        = require('gulp-csso'),
 concat      = require('gulp-concat'),
 uglify      = require('gulp-uglify'),
-fileinclude = require('gulp-file-include'),
 sync        = require ('browser-sync');
 
 gulp.task('serverRun', function() {
@@ -31,20 +30,14 @@ gulp.task('js', function () {
   .pipe(sync.stream());
 });
 
-gulp.task('fileinclude', function() {
+gulp.task('html', function() {
   gulp.src([
     'index.html'
   ])
-  .pipe(fileinclude({
-    prefix: '@@',
-    indent: true,
-    basepath: './'
-  }))
   .pipe(gulp.dest('./dist/'))
-  .pipe(sync.stream());
 });
 
-gulp.task('default', ['sass', 'js', 'fileinclude', 'serverRun'], function() {
+gulp.task('default', ['sass', 'js', 'html', 'serverRun'], function() {
   console.log('\n EstÃ¡ trabalhando! \n');
 });
 
@@ -52,6 +45,6 @@ gulp.task('watch', ['default'], function () {
   gulp.watch('assets/sass/*.scss', ['sass']);
   gulp.watch('assets/js/*.js', ['js']);
   gulp.watch('*/*', ['serverRun']);
-  gulp.watch('components/*.php', ['fileinclude']);
-  gulp.watch('*.php', ['fileinclude']);
+  gulp.watch('components/*.php', ['html']);
+  gulp.watch('*.html', ['html']);
 });

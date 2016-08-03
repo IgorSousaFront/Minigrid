@@ -1,12 +1,61 @@
 #header {
 	padding: 20px 0;
+	box-shadow: 0 1px 12px $color-dark;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	
 	.header__brand {
-		border: 1px solid red;
+		text-align: center;
 
 		h1 {
 			color: $color-primary;
 			text-transform: uppercase;
+			line-height: 100%;
+			margin-bottom: 10px;
 		}
 	}
+
+	.header__nav {
+
+		ul {
+
+			li {
+				display: inline-block;
+				text-align: center;
+				
+				a {
+					display: block;
+					padding: 10px 0;
+					color: darken($color-primary, 10%);
+					text-decoration: none;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+  	@media (min-width: $screen-mb) {
+
+  		.header__brand {
+
+  			h1 {
+  				margin: 0;
+  			}
+  		}
+
+  		.header__nav {
+
+  			ul {
+
+  				li {
+
+  					a {
+  						padding: 5px 0;
+  					}
+  				}
+  			}
+  		}
+  	}
 }
