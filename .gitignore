@@ -4,4 +4,4 @@ node_modules/
 dist/css/
 dist/js/
 dist/**/*.html
-dist/**/*.php
+dist/*.html

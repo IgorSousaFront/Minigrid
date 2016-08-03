@@ -10,4 +10,24 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
+	color: $color-primary;
+}
+
+/*
+// Components
+*/
+
+.title-area {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: $color-primary;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.text-area {
+	font-size: 16px;
+	margin: 10px 0;
+	color: darken($color-primary, 15%);
+	margin: 0;
 }

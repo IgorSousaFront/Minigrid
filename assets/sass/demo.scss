@@ -1,3 +1,7 @@
+/*
+// Header
+*/
+
 #header {
 	padding: 20px 0;
 	box-shadow: 0 1px 12px $color-dark;
@@ -5,6 +9,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	background-color: $color-clean;
 	
 	.header__brand {
 		text-align: center;
@@ -31,14 +36,16 @@
 					color: darken($color-primary, 10%);
 					text-decoration: none;
 					font-size: 14px;
+					text-transform: uppercase;
 				}
 			}
 		}
 	}
 
-  	@media (min-width: $screen-mb) {
+  	@media (min-width: $screen-tb) {
 
   		.header__brand {
+  			text-align: left;
 
   			h1 {
   				margin: 0;
@@ -57,5 +64,17 @@
   				}
   			}
   		}
+  	}
+}
+
+/*
+// Main
+*/
+
+#main {
+	margin-top: 180px;
+
+  	@media (min-width: $screen-tb) {
+  		margin-top: 67px;
   	}
 }
