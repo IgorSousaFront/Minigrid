@@ -66,13 +66,13 @@ $column-number: 12 !default;
 		box-sizing: border-box;
 	}
 
-	@media (min-width: $screen-mb) {
+	@media (min-width: $screen-tb) {
     	width: 750px;
 	}
-	@media (min-width: $screen-tb) {
+	@media (min-width: $screen-dk) {
 	    width: 970px;
 	}
-	@media (min-width: $screen-dk) {
+	@media (min-width: $screen-tv) {
 	    width: 1170px;
 	}
 }
