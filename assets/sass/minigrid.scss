@@ -59,9 +59,29 @@ $column-number: 12 !default;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
 	flex-wrap: wrap;
 
-	@media (min-width: $screen-mb) {
-		width: calc(100% - 200px);
+	> * {
+		box-sizing: border-box;
 	}
+
+	@media (min-width: $screen-mb) {
+    	width: 750px;
+	}
+	@media (min-width: $screen-tb) {
+	    width: 970px;
+	}
+	@media (min-width: $screen-dk) {
+	    width: 1170px;
+	}
+}
+
+.container-fluid {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 0 15px;
 }

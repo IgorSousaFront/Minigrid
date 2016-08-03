@@ -1,7 +1,7 @@
 bower_components/
 node_modules/
 
-public/css/
-public/js/
-public/**/*.html
-public/**/*.php
+dist/css/
+dist/js/
+dist/**/*.html
+dist/**/*.php
