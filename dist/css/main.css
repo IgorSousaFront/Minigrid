@@ -132,7 +132,10 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   flex-wrap: wrap; }
+  .container > * {
+    box-sizing: border-box; }
   @media (min-width: 450px) {
     .container {
       width: calc(100% - 200px); } }

@@ -59,6 +59,7 @@ $column-number: 12 !default;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
 	flex-wrap: wrap;
 
 	> * {
