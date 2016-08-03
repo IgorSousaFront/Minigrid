@@ -139,3 +139,7 @@
   @media (min-width: 450px) {
     .container {
       width: calc(100% - 200px); } }
+
+.container-fluid {
+  width: 100%;
+  padding: 0 15px; }
