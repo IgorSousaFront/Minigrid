@@ -138,8 +138,18 @@
     box-sizing: border-box; }
   @media (min-width: 450px) {
     .container {
-      width: calc(100% - 200px); } }
+      width: 750px; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 1170px; } }
 
 .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0 15px; }
