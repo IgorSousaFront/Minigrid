@@ -1,8 +1,8 @@
 $column-number: 12 !default;
 
-@mixin make-reset($i: 1, $cols: ".col-mb-#{$i}, .col-tb-#{$i}, .col-dk-#{$i}, .col-tv-#{$i}") {
+@mixin make-reset($i: 1, $cols: ".mb-#{$i}, .tb-#{$i}, .dk-#{$i}, .tv-#{$i}") {
   @for $i from (1 + 1) through $column-number {
-    $cols: "#{$cols}, .col-mb-#{$i}, .col-tb-#{$i}, .col-dk-#{$i}, .col-tv-#{$i}";
+    $cols: "#{$cols}, .mb-#{$i}, .tb-#{$i}, .dk-#{$i}, .tv-#{$i}";
   }
   #{$cols} {
     position: relative;
