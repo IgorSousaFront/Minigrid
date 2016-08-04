@@ -1,13 +1,14 @@
 $column-number: 12 !default;
+$padding: 15px;
 
-@mixin make-reset($i: 1, $cols: ".mb-#{$i}, .tb-#{$i}, .dk-#{$i}, .tv-#{$i}") {
-  @for $i from (1 + 1) through $column-number {
+@mixin make-reset($i: 0, $cols: ".mb-#{$i}, .tb-#{$i}, .dk-#{$i}, .tv-#{$i}") {
+  @for $i from (0 + 1) through $column-number {
     $cols: "#{$cols}, .mb-#{$i}, .tb-#{$i}, .dk-#{$i}, .tv-#{$i}";
   }
   #{$cols} {
     position: relative;
-    padding-left:  15px;
-    padding-right: 15px;
+    padding-left:  $padding;
+    padding-right: $padding;
   }
 }
 
@@ -80,8 +81,7 @@ $column-number: 12 !default;
 .container-fluid {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	width: 100%;
-	padding: 0 15px;
 }
