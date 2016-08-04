@@ -10,6 +10,7 @@
 	left: 0;
 	width: 100%;
 	background-color: $color-clean;
+	z-index: 999;
 	
 	.header__brand {
 		text-align: center;
@@ -75,8 +76,20 @@
 	margin-top: 180px;
 
 	.quest {
+		padding: 10px 0;
 
 		main {
+
+			.demo-grid {
+				padding: 30px 0;
+
+				.demo-box {
+					padding: 20px;
+					margin: 10px 0;
+					box-shadow: 0 0 2px 1px $color-dark;
+					text-align: center;
+				}
+			}
 
 			figure {
 				width: 100%;
@@ -85,7 +98,7 @@
 				img {
 					width: 100%;
 					height: 100%;
-					objecti-fit: contain;
+					object-fit: contain;
 				}
 			}
 		}
@@ -99,10 +112,7 @@
   			main {
 
   				figure {
-
-  					img {
-  						margin: 0;
-  					}
+					margin-top: 0;
   				}
   			}
   		}

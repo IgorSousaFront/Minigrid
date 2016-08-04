@@ -59,7 +59,7 @@ $column-number: 12 !default;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
 	flex-wrap: wrap;
 
 	> * {
@@ -80,7 +80,7 @@ $column-number: 12 !default;
 .container-fluid {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	width: 100%;
 	padding: 0 15px;

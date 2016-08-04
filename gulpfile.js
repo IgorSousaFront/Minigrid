@@ -17,7 +17,6 @@ gulp.task('sass', function () {
   ])
   .pipe(sass().on('error', sass.logError))
   .pipe(concat('main.css'))
-  .pipe(csso())
   .pipe(gulp.dest('./dist/css/'))
   .pipe(sync.stream());
 });
