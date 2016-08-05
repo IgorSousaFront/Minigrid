@@ -152,7 +152,7 @@
   .tv-12 {
     width: 100%; } }
 
-.mb-12, .tb-12, .dk-12, .tv-12, .mb-2, .tb-2, .dk-2, .tv-2, .mb-3, .tb-3, .dk-3, .tv-3, .mb-4, .tb-4, .dk-4, .tv-4, .mb-5, .tb-5, .dk-5, .tv-5, .mb-6, .tb-6, .dk-6, .tv-6, .mb-7, .tb-7, .dk-7, .tv-7, .mb-8, .tb-8, .dk-8, .tv-8, .mb-9, .tb-9, .dk-9, .tv-9, .mb-10, .tb-10, .dk-10, .tv-10, .mb-11, .tb-11, .dk-11, .tv-11, .mb-12, .tb-12, .dk-12, .tv-12 {
+.mb-12, .tb-12, .dk-12, .tv-12, .mb-1, .tb-1, .dk-1, .tv-1, .mb-2, .tb-2, .dk-2, .tv-2, .mb-3, .tb-3, .dk-3, .tv-3, .mb-4, .tb-4, .dk-4, .tv-4, .mb-5, .tb-5, .dk-5, .tv-5, .mb-6, .tb-6, .dk-6, .tv-6, .mb-7, .tb-7, .dk-7, .tv-7, .mb-8, .tb-8, .dk-8, .tv-8, .mb-9, .tb-9, .dk-9, .tv-9, .mb-10, .tb-10, .dk-10, .tv-10, .mb-11, .tb-11, .dk-11, .tv-11, .mb-12, .tb-12, .dk-12, .tv-12 {
   position: relative;
   padding-left: 15px;
   padding-right: 15px; }
@@ -181,8 +181,7 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 0 15px; }
+  width: 100%; }
 
 /*
 // Demo
@@ -234,7 +233,7 @@
     #main .quest main .demo-grid {
       padding: 30px 0; }
       #main .quest main .demo-grid .demo-box {
-        padding: 20px;
+        height: 30px;
         margin: 10px 0;
         box-shadow: 0 0 2px 1px #778899;
         text-align: center; }
