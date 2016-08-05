@@ -233,7 +233,7 @@
     #main .quest main .demo-grid {
       padding: 30px 0; }
       #main .quest main .demo-grid .demo-box {
-        height: 30px;
+        padding: 8px 0;
         margin: 10px 0;
         box-shadow: 0 0 2px 1px #778899;
         text-align: center; }
