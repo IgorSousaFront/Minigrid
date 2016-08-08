@@ -100,6 +100,17 @@
     .btn-primary:hover .fa {
       color: #ffffff; }
 
+code {
+  padding: 10px;
+  background-color: #fdf8f0;
+  border: 1px solid #ccc;
+  border-left: 3px solid #3399dd;
+  color: #778899;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 30px; }
+
 .contrast {
   background-color: #3399dd; }
   .contrast * {

@@ -124,6 +124,18 @@
 	}
 }
 
+code {
+	padding: 10px;
+	background-color: #fdf8f0;
+	border: 1px solid #ccc;
+	border-left: 3px solid $color-primary;
+	color: $color-dark;
+	display: block;
+	overflow-x: auto;
+	white-space: nowrap;
+	margin-bottom: 30px;
+}
+
 .contrast {
 	background-color: $color-primary;
 
