@@ -75,8 +75,7 @@
 #main {
 	margin-top: 180px;
 
-	.quest {
-		padding: 10px 0;
+	.first {
 
 		main {
 
@@ -94,7 +93,6 @@
 			figure {
 				width: 100%;
 				margin-top: 40px;
-
 				img {
 					width: 100%;
 					height: 100%;
@@ -104,10 +102,15 @@
 		}
 	}
 
+	.second {
+		border-top: 4px solid darken($color-primary, 15%);
+		border-bottom: 4px solid darken($color-primary, 15%);
+	}
+
   	@media (min-width: $screen-tb) {
   		margin-top: 67px;
 
-  		.quest {
+  		.first {
 
   			main {
 
