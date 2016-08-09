@@ -95,6 +95,7 @@
 
 #main {
 	margin-top: 85px;
+	background: url(../img/background-section.png);
 
 	.first {
 
@@ -106,7 +107,7 @@
 				.demo-box {
 					padding: 8px 0;
 					margin: 10px 0;
-					box-shadow: 0 0 2px 1px $color-dark;
+					border: 2px solid $color-primary;
 					text-align: center;
 				}
 			}

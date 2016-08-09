@@ -96,31 +96,26 @@
 }
 
 .btn-primary {
-	border: 2px solid $color-primary;
-	padding: 10px 16px;
+	border: none;
+	padding: 13px 16px;
 	text-align: center;
 	display: block;
-	background-color: transparent;
-	color: $color-primary;
+	background-color: $color-primary;
 	text-transform: uppercase;
 	text-decoration: none;
 	width: 100%;
 	margin-bottom: 20px;
 	transition: color ease .3s, background-color ease .3s;
+	color: $color-clean;
 
 	.fi,
 	.fa {
 		transition: color ease .3s;
+		color: $color-clean;
 	}
 
 	&:hover {
-		background-color: $color-primary;
-		color: $color-clean;
-
-		.fi,
-		.fa {
-			color: $color-clean;
-		}
+		background-color: darken($color-primary, 15%);
 	}
 }
 

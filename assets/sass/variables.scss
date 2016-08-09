@@ -3,7 +3,7 @@
 */
 
 $color-primary   : #3399dd;
-$color-secondary : #77bbee;
+$color-secondary : lighten($color-primary, 15%);
 $color-light     : #bbddee;
 $color-clean     : #ffffff;
 $color-dark      : #778899;
