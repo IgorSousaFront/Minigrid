@@ -4,7 +4,7 @@
 
 #header {
 	padding: 20px 0;
-	box-shadow: 0 1px 12px $color-dark;
+	box-shadow: 0 1px 6px $color-dark;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -13,17 +13,31 @@
 	z-index: 999;
 	
 	.header__brand {
-		text-align: center;
 
 		h1 {
 			color: $color-primary;
 			text-transform: uppercase;
 			line-height: 100%;
-			margin-bottom: 10px;
+			font-size: 45px;
+		}
+	}
+
+	.header__button-menu {
+		text-align: right;
+
+		button {
+			border: 2px solid $color-primary;
+			padding: 10px;
+			background-color: transparent;
+
+			.fa {
+				font-size: 20px;
+			}
 		}
 	}
 
 	.header__nav {
+		display: none;
 
 		ul {
 
@@ -32,12 +46,13 @@
 				text-align: center;
 				
 				a {
-					display: block;
-					padding: 10px 0;
+					display: inline-block;
+					padding: 20px 0;
 					color: darken($color-primary, 10%);
 					text-decoration: none;
 					font-size: 14px;
 					text-transform: uppercase;
+					position: relative;
 				}
 			}
 		}
@@ -50,10 +65,16 @@
 
   			h1 {
   				margin: 0;
+  				font-size: 25px;
   			}
   		}
 
+  		.header__button-menu {
+  			display: none;
+  		}
+
   		.header__nav {
+  			display: block !important;
 
   			ul {
 
@@ -73,7 +94,7 @@
 */
 
 #main {
-	margin-top: 180px;
+	margin-top: 85px;
 
 	.first {
 

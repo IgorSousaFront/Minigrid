@@ -23,6 +23,8 @@ gulp.task('sass', function () {
 
 gulp.task('js', function () {
   return gulp.src([
+    'bower_components/jquery/dist/jquery.min.js',
+    'assets/js/main.js'
   ])
   .pipe(concat('main.js'))
   .pipe(gulp.dest('dist/js/'))
