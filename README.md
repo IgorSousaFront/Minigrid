@@ -24,3 +24,8 @@ O sistema consiste básicamente em usar a classe `container` e usar as classes p
 * tb = tablet.
 * dk = desktop.
 * tv = large desktop.
+
+
+### Quer ajudar?
+
+mande uma issue ou dê uma olhadinha no nosso código... 
