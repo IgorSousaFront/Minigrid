@@ -131,6 +131,14 @@ code {
 	margin-bottom: 30px;
 }
 
+.demo-box {
+	padding: 8px 0;
+	margin: 10px 0;
+	border: 2px solid;
+	text-align: center;
+	background-color: $color-primary;
+}
+
 .contrast {
 	background-color: $color-primary;
 	border-top: 4px solid $color-dark;
@@ -140,15 +148,8 @@ code {
 		color: $color-clean;
 		border-color: $color-clean;
 	}
-}
-
-.demo-grid {
-	padding: 30px 0;
 
 	.demo-box {
-		padding: 8px 0;
-		margin: 10px 0;
-		border: 2px solid;
-		text-align: center;
+		background-color: $color-clean;
 	}
 }
