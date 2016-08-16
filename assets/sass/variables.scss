@@ -3,10 +3,11 @@
 */
 
 $color-primary   : #3399dd;
-$color-secondary : lighten($color-primary, 15%);
-$color-light     : #bbddee;
+$color-secondary : lighten($color-primary, 10%);
+$color-dark      : darken($color-primary, 10%);
+$color-light     : lighten($color-primary, 20%);
 $color-clean     : #ffffff;
-$color-dark      : #778899;
+$color-contrast :  adjust-hue($color-primary, 240deg);
 
 /*
 // Breakpoints
@@ -16,3 +17,10 @@ $screen-mb: 450px;
 $screen-tb: 768px;
 $screen-dk: 992px;
 $screen-tv: 1200px;
+
+/*
+// Grid
+*/
+
+$column-number : 12 !default;
+$padding       : 15px;

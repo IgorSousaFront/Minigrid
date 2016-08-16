@@ -1,8 +1,10 @@
-$column-number: 12 !default;
-$padding: 15px;
+/*
+// Váriaveis
+*/
+@import "variables";
 
-@mixin make-reset($i: 0, $cols: ".mb-#{$i}, .tb-#{$i}, .dk-#{$i}, .tv-#{$i}") {
-  @for $i from (0 + 1) through $column-number {
+@mixin make-reset($i: 1, $cols: ".mb-#{$i}, .tb-#{$i}, .dk-#{$i}, .tv-#{$i}") {
+  @for $i from (2) through $column-number {
     $cols: "#{$cols}, .mb-#{$i}, .tb-#{$i}, .dk-#{$i}, .tv-#{$i}";
   }
   #{$cols} {
@@ -17,6 +19,14 @@ $padding: 15px;
 	@if ($type == width) and ($index > 0) {
 
 		.#{$size}-#{$index} {
+
+			#{$type}: percentage(($index / $column-number));
+		}
+	}
+
+	@if ($type == margin-left) and ($index > 0) {
+
+		.#{$size}-#{offset}-#{$index} {
 
 			#{$type}: percentage(($index / $column-number));
 		}
@@ -53,7 +63,8 @@ $padding: 15px;
 }
 
 @include loop-grid($column-number, width);
-@include make-reset($column-number);
+@include loop-grid($column-number, margin-left);
+@include make-reset();
 
 .container {
 	width: 100%;
@@ -78,7 +89,7 @@ $padding: 15px;
 	}
 }
 
-.container-fluid {
+.container-full {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
