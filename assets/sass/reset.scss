@@ -36,6 +36,15 @@
 	@extend .title-area;
 
 	font-size: 18px;
+
+	+ p {
+		margin: 0 0 20px;
+
+		.fa {
+			margin-right: 5px;
+			color: red;
+		}
+	}
 }
 
 .text-area {
@@ -112,7 +121,7 @@
 	margin-bottom: 20px;
 	transition: color ease .3s, background-color ease .3s;
 	color: $color-clean;
-	box-shadow: 0 6px 0 $color-dark;
+	box-shadow: 0 3px 0 $color-dark;
 
 	.fi,
 	.fa {
@@ -123,11 +132,11 @@
 	&:hover,
 	&:active {
 		background-color: $color-dark;
-		box-shadow: 0 6px 0 darken($color-dark, 10%);
+		box-shadow: 0 3px 0 darken($color-dark, 10%);
 	}
 
 	&:active {
-		transform: translateY(6px);
+		transform: translateY(3px);
 		box-shadow: 0 0px 0 darken($color-dark, 10%);
 	}
 }
