@@ -7,7 +7,6 @@
 * Porque é um sistema simples.
 * Porque é fácil de usar.
 * Porque é pra comunidade
-* BIRL
 
 ### Como usar?
 O sistema consiste básicamente em usar a classe `container` e usar as classes para colunas:
