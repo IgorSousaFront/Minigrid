@@ -60,9 +60,11 @@
 	margin: 30px 0;
 	text-align: center;
 	border: 3px solid;
+	box-shadow: 0 3px $color-dark;
 
 	.fi {
 		font-size: 65px;
+		text-shadow: 0 3px $color-dark;
 	}
 
 	h3 {
@@ -70,6 +72,7 @@
 		height: 46px;
 		margin: 20px 0;
 		font-weight: bold;
+		text-shadow: 0 3px $color-dark;
 
 		&:after {
 			content: '';
@@ -79,12 +82,14 @@
 			margin: 10px auto;
 			background-color: $color-clean;
 			transition: width ease .2s;
+			box-shadow: 0 3px $color-dark;
 		}
 	}
 	
 	p {
 		height: 57px;
 		overflow: hidden;
+		text-shadow: 0 2px $color-dark;
 	}
 
 	&:hover {
@@ -107,6 +112,7 @@
 	margin-bottom: 20px;
 	transition: color ease .3s, background-color ease .3s;
 	color: $color-clean;
+	box-shadow: 0 6px 0 $color-dark;
 
 	.fi,
 	.fa {
@@ -114,8 +120,15 @@
 		color: $color-clean;
 	}
 
-	&:hover {
+	&:hover,
+	&:active {
 		background-color: $color-dark;
+		box-shadow: 0 6px 0 darken($color-dark, 10%);
+	}
+
+	&:active {
+		transform: translateY(6px);
+		box-shadow: 0 0px 0 darken($color-dark, 10%);
 	}
 }
 
